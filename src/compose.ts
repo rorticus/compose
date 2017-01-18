@@ -4,13 +4,13 @@ import { from as arrayFrom, includes } from '@dojo/shim/array';
 import WeakMap from '@dojo/shim/WeakMap';
 import Symbol from '@dojo/shim/Symbol';
 import {
-	before as aspectBefore,
-	after as aspectAfter,
-	around as aspectAround,
-	BeforeAdvice,
-	AfterAdvice,
-	AroundAdvice
-} from './aspect';
+	beforeJoinPoint as aspectBefore,
+	afterJoinPoint as aspectAfter,
+	aroundJoinPoint as aspectAround,
+	JoinPointBeforeAdvice as BeforeAdvice,
+	JoinPointAfterAdvice as AfterAdvice,
+	JoinPointAroundAdvice as AroundAdvice
+} from '@dojo/core/aspect';
 
 /**
  * A tuple of advice types and advice
